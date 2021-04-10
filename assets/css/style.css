@@ -1099,7 +1099,29 @@ button:focus {
   /*background: linear-gradient(180deg, #063264 0%, #11eeee 100%);*/
 }
 
-.appointment-div .block .top-block h3 {
+/*.appointment-div .block .top-block h3 {*/
+/*  text-align: left;*/
+/*  color: #063264;*/
+/*  !*margin: 0 20px 10px;*!*/
+/*  font-family: 'NoahGrotesqueRegular';*/
+/*  font-weight: bold;*/
+/*  font-size: 20px;*/
+
+/*}*/
+.appointment-div .block .top-block .classTitle {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 95%;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: 18px;
+  color: #3b5998;
+  font-weight: 700;
+
+}
+
+
+.appointment-div .block .top-block .classTitle span {
   text-align: left;
   color: #063264;
   /*margin: 0 20px 10px;*/
@@ -1776,8 +1798,6 @@ button:focus {
   height: 30px;
   line-height: 1;
   overflow: hidden;
-  /*white-space: nowrap;*/
-
 }
 
 .profile-tab .profile-block .content-div .classTitle .text {
@@ -1811,7 +1831,7 @@ button:focus {
 .profile-tab .profile-block .content-div .title {
   overflow: hidden;
   white-space: nowrap;
-  width: 80%;
+  width: 95%;
   text-overflow: ellipsis;
   margin: 0;
   font-size: 18px;
