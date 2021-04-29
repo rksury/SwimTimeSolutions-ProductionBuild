@@ -704,3 +704,9 @@ function openPreviousCalender  () {
   document.getElementById("booking_confirm").style.display = "none";
   document.getElementById("individual_date_time").style.display = "block";
 }
+
+function signupPopup () {
+   $("#signup").modal({
+     show:true
+   })
+}
