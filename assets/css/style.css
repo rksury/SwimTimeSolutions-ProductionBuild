@@ -733,6 +733,7 @@ button:focus {
 .content .navbar .navbar-brand {
   color: #063264;
   font-weight: 700;
+  cursor: default;
 }
 
 .search-div {
@@ -778,13 +779,16 @@ button:focus {
   padding: 0;
   margin-left: 15px;
   position: relative;
-  top: -2px;
+  border: 2px solid #063264;
+  background: #063264;
+  border-radius: 50%;
 }
 
 .content .navbar-nav li a img {
-  height: 55px;
-  width: 55px;
+  height: 40px;
+  width: 40px;
   border-radius: 50px;
+  padding: 5px;
 }
 
 .main-content {
@@ -1065,9 +1069,9 @@ button:focus {
 }
 
 .calendar .ui-datepicker-clear-month:before {
-  content: 'Reset Date';
+  content: 'Clear Date';
   position: absolute;
-  color: black;
+  color:  #063264;
   right: -78px;
 }
 
@@ -1323,7 +1327,7 @@ button:focus {
 }
 
 .appointment .next-btn-div button {
-  background: #C4C4C4 !important;
+  background: #1d7ae6 !important;
   color: white !important;
   padding: 13px 28px;
   display: inline-block;
@@ -1340,15 +1344,15 @@ button:focus {
 }
 
 .appointment .next-btn-div .next {
-  background: #063265 !important;
+  background: #1d7ae6 !important;
 }
 
 .appointment .next-btn-div button:hover {
-  background: #1d7ae6 !important;
+  background: #063265 !important;
 }
 
 .appointment .next-btn-div button.next:hover {
-  background: #1d7ae6 !important;
+  background: #063265 !important;
 }
 
 .appointment .calendar .ui-widget.ui-widget-content {
@@ -1585,13 +1589,18 @@ button:focus {
 }
 
 .login.modal .modal-body .last-step a {
-  background: #063264;
+  background: #0DDBDB;
   color: white;
   padding: 13px 42px;
   display: inline-block;
   border-radius: 40px;
   font-size: 20px;
+  font-weight: bolder;
   margin-top: 15px;
+}
+.login.modal .modal-body .last-step a:hover {
+  background: #063264;
+  color: white;
 }
 
 .content.profile {
@@ -2601,10 +2610,15 @@ button:focus {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  border: 1px solid red;
+  height: 360px !important;
 }
 
-.about-us.theme-7.about-image img {
+.about-image .imageContent {
   border-radius: 10px;
+  width:100% !important;
+  height: 100% !important;
+  /*height:100%*/
 }
 
 .about-us .video-content {
@@ -2758,7 +2772,6 @@ button:focus {
 }
 
 .about-us .about-content {
-
   padding-left: 20px;
 }
 
@@ -3297,7 +3310,7 @@ button:focus {
 
 /* Links */
 .footer-widget ul.list-dash li {
-  width: 50%;
+  width: 100%;
   float: left;
   line-height: normal;
   padding-bottom: 25px;
