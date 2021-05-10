@@ -2610,7 +2610,6 @@ button:focus {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  border: 1px solid red;
   height: 360px !important;
 }
 
