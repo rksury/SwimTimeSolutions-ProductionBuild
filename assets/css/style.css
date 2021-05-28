@@ -194,9 +194,14 @@ h6,
   color: #333333;
 }
 
-.btn-custom:hover {
-  background: #c4d4d4 !important;
+.pay-button {
+  width: 110px;
 }
+
+.btn-custom {
+  /*background: #c4d4d4 !important;*/
+}
+
 
 .btn-custom-color:hover {
   background: #063264 !important;
@@ -224,7 +229,6 @@ button:focus {
 }
 
 
-
 .navbar .navbar-brand {
   font-size: 30px;
   color: white;
@@ -232,7 +236,8 @@ button:focus {
   font-weight: 600;
 
 }
-.HomeLogo{
+
+.HomeLogo {
   width: 70px;
   height: 70px;
   padding: 0;
@@ -240,6 +245,7 @@ button:focus {
   top: -2px;
   /*margin-top: -25px;*/
 }
+
 .navbar .nav-item {
   padding: 10px 20px;
 }
@@ -443,7 +449,7 @@ button:focus {
 .login.modal input {
   font-family: 'NoahGrotesqueRegular';
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .login.modal label {
@@ -453,9 +459,10 @@ button:focus {
 }
 
 .login.modal input {
-  background: #C4C4C4;
+  background: #e5e3e3;
   border-radius: 8px;
-  height: 35px;
+  font-family: Arial;
+  /*height: 35px;*/
 }
 
 .login.modal .checkbox-inline {
@@ -550,20 +557,28 @@ button:focus {
 .registration.modal input {
   font-family: 'NoahGrotesqueRegular';
   font-style: normal;
-  font-weight: normal;
-  /*width : 50%;*/
+  font-weight: bold;
 }
+
 
 .registration.modal label {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: NoahGrotesqueMedium;
+}
+
+.registration.modal span {
+  color: #535353;
+  font-size: 14px;
+  padding: 0 0 0 2px;
   font-family: NoahGrotesqueMedium;
 }
 
 .registration.modal input {
-  background: #C4C4C4;
-  border-radius: 8px;
-  height: 35px;
+  background: #e5e3e3;
+  border-radius: 5px;
+  font-family: Arial;
+  /*height: 30px;*/
 }
 
 .registration.modal .checkbox-inline {
@@ -587,6 +602,7 @@ button:focus {
   outline: none;
   background: #286090;
   border-color: #286090;
+  width: 30%;
 }
 
 .registration.modal .btn-login:hover {
@@ -651,7 +667,7 @@ button:focus {
 
 .left-sidebar a:hover .tab-link .img-div-one {
   background-image: url(../img/002-swimming.png);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .left-sidebar a.active .tab-link .img-div-one {
@@ -692,7 +708,7 @@ button:focus {
 
 .left-sidebar a:hover .tab-link .img-div-two {
   background-image: url(../img/cal.png);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .left-sidebar a.active .tab-link .img-div-two {
@@ -707,13 +723,32 @@ button:focus {
 
 .left-sidebar a:hover .tab-link .img-div-three {
   background-image: url(../img/support.png);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .left-sidebar a.active .tab-link .img-div-three {
   background-image: url(../img/support.png);
   background-color: #0DDBDB;
 }
+
+
+.left-sidebar a .tab-link .img-div-four {
+  background-size: 50px 47px;
+  background-image: url(../img/dollar.png);
+}
+
+.left-sidebar a:hover .tab-link .img-div-four {
+  background-image: url(../img/dollar.png);
+  background-color: #ffffff;
+}
+
+.left-sidebar a.active .tab-link .img-div-four {
+  background-image: url(../img/dollar.png);
+  background-color: #0DDBDB;
+  color: white;
+
+}
+
 
 .content {
   margin-left: 8.35%;
@@ -810,7 +845,7 @@ button:focus {
   border-bottom: 2px solid #dfdfdf;
   padding-bottom: 4px;
   margin-bottom: 36px;
-  text-align: center;
+  text-align: left;
 }
 
 .block {
@@ -821,6 +856,8 @@ button:focus {
   max-height: 500px;
   overflow-y: auto;
   padding-right: 10px;
+  scrollbar-width: none;
+
 }
 
 .block .block-div {
@@ -1015,7 +1052,7 @@ button:focus {
   width: 401px;
   margin: auto;
   margin-top: 40px;
-  border-radius: 11px;
+  border-radius: 5px;
   padding-bottom: 34px;
   display: block !important;
 }
@@ -1071,7 +1108,7 @@ button:focus {
 .calendar .ui-datepicker-clear-month:before {
   content: 'Clear Date';
   position: absolute;
-  color:  #063264;
+  color: #063264;
   right: -78px;
 }
 
@@ -1158,16 +1195,17 @@ button:focus {
 }
 
 .appointment-div .block .bottom-div .ImageContent {
-  width:120px;
-  height:80px;
+  width: 120px;
+  height: 80px;
   justify-content: center;
   text-align: center;
   align-items: center;
   /*height: 80px;*/
 }
-.appointment-div .block .bottom-div .ImageContent img{
-  width:70px;
-  height:70px;
+
+.appointment-div .block .bottom-div .ImageContent img {
+  width: 70px;
+  height: 70px;
   padding: 10px;
   /*height: 15vh;*/
   border-radius: 50%;
@@ -1336,7 +1374,7 @@ button:focus {
   letter-spacing: 0.5px;
   opacity: 1;
   float: none;
-  border-radius: 0;
+  border-radius: 5px;
   font-weight: 600;
   line-height: 20px;
   box-shadow: none;
@@ -1598,6 +1636,7 @@ button:focus {
   font-weight: bolder;
   margin-top: 15px;
 }
+
 .login.modal .modal-body .last-step a:hover {
   background: #063264;
   color: white;
@@ -1796,6 +1835,17 @@ button:focus {
   padding: 17px 18px;
 }
 
+.profile-tab .profile-block .content-div .pendingStatus {
+  background: #efef1c;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.profile-tab .profile-block .content-div .rejectStatus {
+  background: #a01616;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
 
 .profile-tab .profile-block .content-div p.p-tag {
   font-size: 18px;
@@ -1889,15 +1939,16 @@ button:focus {
 
 .profile-tab .profile-block .content-div a {
   color: white;
-  background: #0ddbdb;
+  background: #063264;
   padding: 10px 16px;
   display: inline-block;
-  border-radius: 30px;
+  border-radius: 12px;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 5px 15px rgb(29 209 176);
+  box-shadow: 0 2px 8px;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 13px;
+  text-align: center;
 }
 
 .profile-tab .nav-tabs > li.active > a,
@@ -2615,7 +2666,7 @@ button:focus {
 
 .about-image .imageContent {
   border-radius: 10px;
-  width:100% !important;
+  width: 100% !important;
   height: 100% !important;
   /*height:100%*/
 }
@@ -2741,9 +2792,12 @@ button:focus {
 
 .about-us .feature-text {
   margin-top: 0;
-  max-height: 300px;
-  min-height: 300px;
-  overflow: scroll;
+  max-height: 400px;
+  min-height: 400px;
+  overflow: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
 }
 
@@ -4051,7 +4105,7 @@ button:focus {
 
   .block,
   .notification-div {
-    overflow: auto;
+    overflow: hidden;
   }
 
   .block::-webkit-scrollbar-track,
@@ -4268,7 +4322,7 @@ button:focus {
 /*####################################    Loading Spinner #############################################*/
 
 
-#loading{
+#loading {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -4283,6 +4337,10 @@ button:focus {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

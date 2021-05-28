@@ -83,7 +83,7 @@ for (var j = 0; j <= 11; j++) {
 $(function () {
   $('#calendar').datepicker({
     // beforeShowDay: $.datepicker.noWeekends,
-    minDate: 0,
+    // minDate: 0,
   });
   initCalendar();
 });
@@ -158,11 +158,11 @@ function initCalendar() {
     }
   });
 
-  $('.ui-datepicker-clear-month').click(function () {
-    individualDate = [];
-    calendarTds.find('a').removeClass('ui-state-active');
-    console.log(individualDate);
-  });
+  // $('.ui-datepicker-clear-month').click(function () {
+  //   individualDate = [];
+  //   calendarTds.find('a').removeClass('ui-state-active');
+  //   console.log(individualDate);
+  // });
 
   $('a.ui-datepicker-next, a.ui-datepicker-prev').click(function () {
     myDates[thisMonth] = individualDate;
@@ -188,7 +188,7 @@ $(document).ready(function () {
 
   // next step
   $('.registration-form .btn-next').on('click', function () {
-    console.log('date from custom JS', individualDate);
+    console.log('send date and time for confirm booking', individualDate);
     var parent_fieldset = $(this).parents('fieldset');
     var next_step = true;
 
@@ -256,13 +256,19 @@ new WOW().init();
 // #####################################################################
 
 var selectedDates = [];
-var singleDate = $(function () {
+ $(function () {
+   $('.ui-datepicker-clear-month').click(function(){
+     $('#calendar').find(".ui-state-default").removeClass("ui-state-active");
+     selectedDates = [];
+     console.log("clear Individual dates", selectedDates)
+   });
+
+
   $('#calendar table>tbody>tr>td>a').click(function () {
 
     var i = $(this).text();
     selectedDates.push(i)
-    // document.getElementById("onclickDate").innerHTML = "<p>" + individualDate + "</p>";
-    console.log(selectedDates)
+    console.log("Select complete date for individual selection", selectedDates)
     var class_instructor = window.localStorage.getItem('class_instructor_id')
     console.error("class_instructor",class_instructor)
   });
@@ -287,13 +293,12 @@ $(function () {
   $("#clearDates").click(function(){
     $('#calendar2').find(".ui-state-default").removeClass("ui-state-active");
     CompleteDate = [$(this).val()];
-    console.log("calendar2Mydates", CompleteDate)
+    console.log("clear complete course dates", CompleteDate)
   });
 
   $("#calendar2").on("change", function () {
     CompleteDate = [$(this).val()];
-    // document.getElementById("singleDate").innerHTML = "<p>" + CompleteDate + "</p>";
-    console.log("calendar2Mydates", CompleteDate)
+    console.log("Select complete date for complete course", CompleteDate)
     var class_instructor = window.localStorage.getItem('class_instructor_id')
     console.error("class_instructor",class_instructor)
   });
